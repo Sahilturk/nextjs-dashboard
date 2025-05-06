@@ -1,0 +1,1 @@
+app/api/seed/**/*  # Ignore all files in the seed folder

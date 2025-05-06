@@ -1,5 +1,15 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
 export const experimental_ppr  = true; // Enable PPR for this layout
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Dashboard',
+  description: 'Dashboard layout',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
+};
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
